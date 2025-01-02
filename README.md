@@ -8,3 +8,4 @@
 - v2.0.0-alpha.5
   - [Windows](trustee-app/Trustee%20Application_2.0.0-alpha.5_x64-setup.exe)
   - [MacOS](trustee-app/Trustee%20Application_2.0.0-alpha.5_universal.dmg)
+  - [Linux](trustee-app/Trustee Application_2.0.0-alpha.5_amd64.deb)
