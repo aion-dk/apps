@@ -10,10 +10,10 @@
   - [MacOS](trustee-app/Trustee%20Application_2.0.0-alpha.5_universal.dmg)
   - [Linux](trustee-app/Trustee%20Application_2.0.0-alpha.5_amd64.deb)
 - v2.1.0
-  - (Later)[Windows] (trustee-app/Trustee%20Application_2.1.0_x64-setup.exe)
   - [MacOS](trustee-app/Trustee%20Application_2.1.0_universal.dmg)
-  - (Later)[Linux] (trustee-app/Trustee%20Application_2.1.0_amd64.deb)
 - v2.1.1
   - [Windows](trustee-app/Trustee%20Application_2.1.1_x64-setup.exe)
   - [MacOS](trustee-app/Trustee%20Application_2.1.1_universal.dmg)
-  - (Later)[Linux] (trustee-app/Trustee%20Application_2.1.1_amd64.deb)
+- v2.1.2
+  - [Windows](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe)
+  - [MacOS](trustee-app/Trustee%20Application_2.1.2_universal.dmg)
