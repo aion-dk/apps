@@ -17,3 +17,6 @@
 - v2.1.2
   - [Windows](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe)
   - [MacOS](trustee-app/Trustee%20Application_2.1.2_universal.dmg)
+- v3.0.0
+  - [Windows](trustee-app/Trustee%20Application_3.0.0_x64-setup.exe)
+  - [MacOS](trustee-app/Trustee%20Application_3.0.0_universal.dmg)
