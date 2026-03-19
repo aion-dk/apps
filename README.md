@@ -1,82 +1,89 @@
-# Assembly Voting Apps
+# Electa Applications — Download Portal
 
-> **Download portal** for the official Assembly Voting desktop applications.  
-> All apps are available for Windows and macOS (Linux builds available on demand).
+This repository hosts the public download page for the Electa desktop applications.  
+It is published via **GitHub Pages** at the URL configured in the repository settings.
 
----
-
-## Keys Application
-
-Generate and manage cryptographic key pairs used in the voting process.
-
-### Latest release
-
-| Platform | Download |
-|----------|----------|
-| Windows  | [Assembly.Voting.Keys.1.2.0.exe](keys-app/Assembly.Voting.Keys.1.2.0.exe) |
-| macOS    | [Assembly.Voting.Keys-1.2.0.dmg](keys-app/Assembly.Voting.Keys-1.2.0.dmg) |
+The site is built with [Jekyll](https://jekyllrb.com/) using the [Minimal](https://github.com/pages-themes/minimal) remote theme.
 
 ---
 
-## Trustee Application
+## Repository structure
 
-The Trustee Application is used by election trustees to participate in the key ceremony, perform partial decryptions, and verify election results.
+```
+├── _config.yml          # Jekyll site configuration (title, theme, etc.)
+├── _layouts/            # Layout overrides (currently empty — using theme defaults)
+├── _sass/               # Custom SCSS partials
+├── assets/
+│   ├── css/style.scss   # SCSS entry point (compiles to style.css)
+│   └── img/             # Logo and other images
+├── index.md             # Main page content (rendered by Jekyll)
+├── keys-app/            # Keys Application installers
+├── trustee-app/         # Trustee Application installers
+├── Gemfile              # Ruby dependencies (for local preview)
+└── README.md            # ← You are here
+```
 
-### Latest release — v3.1.1
+---
 
-| Platform | Download |
-|----------|----------|
-| Windows  | [Trustee Application 3.1.1 (exe)](trustee-app/Trustee%20Application_3.1.1_x64-setup.exe) |
-| macOS    | [Trustee Application 3.1.1 (dmg)](trustee-app/Trustee%20Application_3.1.1_universal.dmg) |
+## Publishing a new app version
 
-### Older versions
+### 1. Add the installer files
 
-<details>
-<summary>v3.0.0</summary>
+Copy the new installer(s) into the appropriate directory:
 
-| Platform | Download |
-|----------|----------|
-| Windows  | [Trustee Application 3.0.0 (exe)](trustee-app/Trustee%20Application_3.0.0_x64-setup.exe) |
-| macOS    | [Trustee Application 3.0.0 (dmg)](trustee-app/Trustee%20Application_3.0.0_universal.dmg) |
+- **Trustee Application** → `trustee-app/`
+- **Keys Application** → `keys-app/`
 
-</details>
+Follow the existing naming convention:
 
-<details>
-<summary>v2.1.2</summary>
+| App      | Pattern                                              |
+|----------|------------------------------------------------------|
+| Trustee  | `Trustee Application_<version>_<platform>.<ext>`     |
+| Keys     | `Assembly.Voting.Keys.<version>.<ext>` (Windows)     |
+|          | `Assembly.Voting.Keys-<version>.<ext>` (macOS)       |
 
-| Platform | Download |
-|----------|----------|
-| Windows  | [Trustee Application 2.1.2 (exe)](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe) |
-| macOS    | [Trustee Application 2.1.2 (dmg)](trustee-app/Trustee%20Application_2.1.2_universal.dmg) |
+### 2. Update `index.md`
 
-</details>
+1. Update the **"Latest release"** section with the new version number and download links.
+2. Move the previous latest release into the **"Older versions"** table.
+3. URL-encode any spaces in filenames with `%20` (e.g. `Trustee%20Application_3.2.0_universal.dmg`).
 
-<details>
-<summary>v2.1.1</summary>
+### 3. Commit and push
 
-| Platform | Download |
-|----------|----------|
-| Windows  | [Trustee Application 2.1.1 (exe)](trustee-app/Trustee%20Application_2.1.1_x64-setup.exe) |
-| macOS    | [Trustee Application 2.1.1 (dmg)](trustee-app/Trustee%20Application_2.1.1_universal.dmg) |
+```bash
+git add .
+git commit -m "Add Trustee Application vX.Y.Z"
+git push
+```
 
-</details>
+GitHub Pages will rebuild the site automatically. It typically takes 1–2 minutes for changes to appear.
 
-<details>
-<summary>v2.1.0</summary>
+---
 
-| Platform | Download |
-|----------|----------|
-| macOS    | [Trustee Application 2.1.0 (dmg)](trustee-app/Trustee%20Application_2.1.0_universal.dmg) |
+## Local preview
 
-</details>
+To preview the site locally before pushing:
 
-<details>
-<summary>v2.0.0-alpha.5</summary>
+```bash
+# Install dependencies (first time only)
+bundle install
 
-| Platform | Download |
-|----------|----------|
-| Windows  | [Trustee Application 2.0.0-alpha.5 (exe)](trustee-app/Trustee%20Application_2.0.0-alpha.5_x64-setup.exe) |
-| macOS    | [Trustee Application 2.0.0-alpha.5 (dmg)](trustee-app/Trustee%20Application_2.0.0-alpha.5_universal.dmg) |
-| Linux    | [Trustee Application 2.0.0-alpha.5 (deb)](trustee-app/Trustee%20Application_2.0.0-alpha.5_amd64.deb) |
+# Serve locally
+bundle exec jekyll serve
+```
 
-</details>
+Then open [http://localhost:4000](http://localhost:4000).
+
+> **Note:** `Gemfile.lock` is git-ignored because GitHub Pages uses its own pinned dependency versions.
+
+---
+
+## Removing old versions
+
+To keep the repository size manageable, you may want to remove very old installers. When doing so:
+
+1. Delete the file(s) from `keys-app/` or `trustee-app/`.
+2. Remove the corresponding row(s) from the **"Older versions"** table in `index.md`.
+3. Commit and push.
+
+> **Tip:** Even after deleting files from the working tree, they remain in Git history and the repo size stays large. If repo size becomes a concern, consider using [Git LFS](https://git-lfs.com/) for binary assets or a `git filter-repo` rewrite.
