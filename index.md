@@ -32,7 +32,7 @@ Generate and manage cryptographic key pairs used in the voting process.
 
 ## Latest release - v1.2.0
 
-| Platform | Download                                                                  |
-|----------|---------------------------------------------------------------------------|
-| Windows  | [Assembly Voting Keys 1.2.0.exe](keys-app/Assembly.Voting.Keys.1.2.0.exe) |
-| macOS    | [Assembly Voting Keys 1.2.0.dmg](keys-app/Assembly.Voting.Keys-1.2.0.dmg) |
+| Platform | Download                                                                    |
+|----------|-----------------------------------------------------------------------------|
+| Windows  | [Assembly Voting Keys 1.2.0 (exe)](keys-app/Assembly.Voting.Keys.1.2.0.exe) |
+| macOS    | [Assembly Voting Keys 1.2.0 (dmg)](keys-app/Assembly.Voting.Keys-1.2.0.dmg) |
