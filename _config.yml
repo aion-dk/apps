@@ -1,0 +1,10 @@
+title: Electa Applications
+description: Download portal for the official desktop applications for use with Electa
+logo: /assets/img/av-logo-horizontal.svg
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+show_downloads: false
+google_analytics:
+github:
+  is_project_page: false
