@@ -6,17 +6,18 @@ title: ""
 
 The Trustee Application is used by election trustees to participate in the key ceremony, perform partial decryptions, and verify election results.
 
-## Latest release — v3.1.2
+## Latest release — v3.1.3
 
 | Platform | Download                                                                                 |
 |----------|------------------------------------------------------------------------------------------|
-| Windows  | [Trustee Application 3.1.2 (exe)](trustee-app/Trustee%20Application_3.1.2_x64-setup.exe) |
-| macOS    | [Trustee Application 3.1.2 (dmg)](trustee-app/Trustee%20Application_3.1.2_universal.dmg) |
+| Windows  | [Trustee Application 3.1.3 (exe)](trustee-app/Trustee%20Application_3.1.3_x64-setup.exe) |
+| macOS    | [Trustee Application 3.1.3 (dmg)](trustee-app/Trustee%20Application_3.1.3_universal.dmg) |
 
 ## Older versions
 
 | Version        | Windows                                                              | macOS                                                                | Linux                                                            |
 |----------------|----------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------|
+| v3.1.2         | [exe](trustee-app/Trustee%20Application_3.1.2_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_3.1.2_universal.dmg)         | N/A                                                              |
 | v3.1.1         | [exe](trustee-app/Trustee%20Application_3.1.1_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_3.1.1_universal.dmg)         | N/A                                                              |
 | v3.0.0         | [exe](trustee-app/Trustee%20Application_3.0.0_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_3.0.0_universal.dmg)         | N/A                                                              |
 | v2.1.2         | [exe](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_2.1.2_universal.dmg)         | N/A                                                              |
