@@ -10,8 +10,8 @@ The Trustee Application is used by election trustees to participate in the key c
 
 | Platform | Download                                                                                 |
 |----------|------------------------------------------------------------------------------------------|
-| Windows  | [Trustee Application 3.1.3 (exe)](trustee-app/Trustee%20Application_3.1.3_x64-setup.exe) |
-| macOS    | [Trustee Application 3.1.3 (dmg)](trustee-app/Trustee%20Application_3.1.3_universal.dmg) |
+| Windows  | [Trustee Application 3.1.3 (exe)](https://github.com/aion-dk/apps/releases/download/trustee-app-v3.1.3/Trustee.Application_3.1.3_x64-setup.exe) |
+| macOS    | [Trustee Application 3.1.3 (dmg)](https://github.com/aion-dk/apps/releases/download/trustee-app-v3.1.3/Trustee.Application_3.1.3_universal.dmg) |
 
 ## Older versions
 
