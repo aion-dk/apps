@@ -6,12 +6,20 @@ title: ""
 
 The Trustee Application is used by election trustees to participate in the key ceremony, perform partial decryptions, and verify election results.
 
-## Latest release — v3.1.3
+## Latest release — v3.1.2
 
 | Platform | Download                                                                                 |
 |----------|------------------------------------------------------------------------------------------|
-| Windows  | [Trustee Application 3.1.3 (exe)](https://github.com/aion-dk/apps/releases/download/trustee-app-v3.1.3/Trustee.Application_3.1.3_x64-setup.exe) |
-| macOS    | [Trustee Application 3.1.3 (dmg)](https://github.com/aion-dk/apps/releases/download/trustee-app-v3.1.3/Trustee.Application_3.1.3_universal.dmg) |
+| Windows  | [Trustee Application 3.1.2 (exe)](trustee-app/Trustee%20Application_3.1.2_x64-setup.exe) |
+| macOS    | [Trustee Application 3.1.2 (dmg)](trustee-app/Trustee%20Application_3.1.2_universal.dmg) |
+
+## Latest beta — v4.0.0-beta
+Note this requires and is required by a pre-release version of Electa. Only download this if v3.1.2 isn't working.
+
+| Platform | Download                                                                                 |
+|----------|------------------------------------------------------------------------------------------|
+| Windows  | [Trustee Application 4.0.0-beta (exe)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_x64-setup.exe) |
+| macOS    | [Trustee Application 4.0.0-beta (dmg)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_universal.dmg) |
 
 ## Older versions
 
