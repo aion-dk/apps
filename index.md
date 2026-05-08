@@ -6,32 +6,25 @@ title: ""
 
 The Trustee Application is used by election trustees to participate in the key ceremony, perform partial decryptions, and verify election results.
 
-## Latest release — v3.1.2
+## Latest release — v4.1.0
 
-| Platform | Download                                                                                 |
-|----------|------------------------------------------------------------------------------------------|
-| Windows  | [Trustee Application 3.1.2 (exe)](trustee-app/Trustee%20Application_3.1.2_x64-setup.exe) |
-| macOS    | [Trustee Application 3.1.2 (dmg)](trustee-app/Trustee%20Application_3.1.2_universal.dmg) |
-
-## Latest beta — v4.1.0-beta
-Note this requires and is required by a pre-release version of Electa. Only download this if v3.1.2 isn't working.
-
-| Platform | Download                                                                                 |
-|----------|------------------------------------------------------------------------------------------|
-| Windows  | [Trustee Application 4.1.0-beta (exe)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.1.0/Trustee.Application_4.1.0_x64-setup.exe) |
-| macOS    | [Trustee Application 4.1.0-beta (dmg)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.1.0/Trustee.Application_4.1.0_universal.dmg) |
+| Platform | Download                                                                                                                                        |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Windows  | [Trustee Application 4.1.0 (exe)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.1.0/Trustee.Application_4.1.0_x64-setup.exe) |
+| macOS    | [Trustee Application 4.1.0 (dmg)](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.1.0/Trustee.Application_4.1.0_universal.dmg) |
 
 ## Older versions
 
-| Version        | Windows                                                              | macOS                                                                | Linux                                                            |
-|----------------|----------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------|
-| v4.0.0-beta    | [exe](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_x64-setup.exe)         | [dmg](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_universal.dmg)         | N/A                                                              |
-| v3.1.1         | [exe](trustee-app/Trustee%20Application_3.1.1_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_3.1.1_universal.dmg)         | N/A                                                              |
-| v3.0.0         | [exe](trustee-app/Trustee%20Application_3.0.0_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_3.0.0_universal.dmg)         | N/A                                                              |
-| v2.1.2         | [exe](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_2.1.2_universal.dmg)         | N/A                                                              |
-| v2.1.1         | [exe](trustee-app/Trustee%20Application_2.1.1_x64-setup.exe)         | [dmg](trustee-app/Trustee%20Application_2.1.1_universal.dmg)         | N/A                                                              |
-| v2.1.0         | N/A                                                                  | [dmg](trustee-app/Trustee%20Application_2.1.0_universal.dmg)         | N/A                                                              |
-| v2.0.0-alpha.5 | [exe](trustee-app/Trustee%20Application_2.0.0-alpha.5_x64-setup.exe) | [dmg](trustee-app/Trustee%20Application_2.0.0-alpha.5_universal.dmg) | [deb](trustee-app/Trustee%20Application_2.0.0-alpha.5_amd64.deb) |
+| Version        | Windows                                                                                                             | macOS                                                                                                               | Linux                                                            |
+|----------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| v4.0.0         | [exe](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_x64-setup.exe) | [dmg](https://github.com/aion-dk/apps/releases/download/trustee-app-v4.0.0/Trustee.Application_4.0.0_universal.dmg) | N/A                                                              |
+| v3.1.2         | [exe](trustee-app/Trustee%20Application_3.1.2_x64-setup.exe)                                                        | [dmg](trustee-app/Trustee%20Application_3.1.2_universal.dmg)                                                        | N/A                                                              |
+| v3.1.1         | [exe](trustee-app/Trustee%20Application_3.1.1_x64-setup.exe)                                                        | [dmg](trustee-app/Trustee%20Application_3.1.1_universal.dmg)                                                        | N/A                                                              |
+| v3.0.0         | [exe](trustee-app/Trustee%20Application_3.0.0_x64-setup.exe)                                                        | [dmg](trustee-app/Trustee%20Application_3.0.0_universal.dmg)                                                        | N/A                                                              |
+| v2.1.2         | [exe](trustee-app/Trustee%20Application_2.1.2_x64-setup.exe)                                                        | [dmg](trustee-app/Trustee%20Application_2.1.2_universal.dmg)                                                        | N/A                                                              |
+| v2.1.1         | [exe](trustee-app/Trustee%20Application_2.1.1_x64-setup.exe)                                                        | [dmg](trustee-app/Trustee%20Application_2.1.1_universal.dmg)                                                        | N/A                                                              |
+| v2.1.0         | N/A                                                                                                                 | [dmg](trustee-app/Trustee%20Application_2.1.0_universal.dmg)                                                        | N/A                                                              |
+| v2.0.0-alpha.5 | [exe](trustee-app/Trustee%20Application_2.0.0-alpha.5_x64-setup.exe)                                                | [dmg](trustee-app/Trustee%20Application_2.0.0-alpha.5_universal.dmg)                                                | [deb](trustee-app/Trustee%20Application_2.0.0-alpha.5_amd64.deb) |
 
 ---
 
