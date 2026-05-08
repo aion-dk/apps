@@ -27,31 +27,32 @@ The site is built with [Jekyll](https://jekyllrb.com/) using the [Minimal](https
 
 ## Publishing a new app version
 
-### 1. Add the installer files
+### 1. Create a GitHub Release
 
-Copy the new installer(s) into the appropriate directory:
+New versions of the Trustee Application are distributed via **GitHub Releases**.
 
-- **Trustee Application** → `trustee-app/`
-- **Keys Application** → `keys-app/`
+1. Go to the repository's **Releases** page and click **Draft a new release**.
+2. Create a new tag following the convention: `trustee-app-vX.Y.Z` (e.g. `trustee-app-v4.2.0`).
+3. Upload the installer files as release assets, following the naming convention:
 
-Follow the existing naming convention:
+| Platform | Pattern                                          |
+|----------|--------------------------------------------------|
+| Windows  | `Trustee.Application_<version>_x64-setup.exe`   |
+| macOS    | `Trustee.Application_<version>_universal.dmg`   |
 
-| App      | Pattern                                              |
-|----------|------------------------------------------------------|
-| Trustee  | `Trustee Application_<version>_<platform>.<ext>`     |
-| Keys     | `Assembly.Voting.Keys.<version>.<ext>` (Windows)     |
-|          | `Assembly.Voting.Keys-<version>.<ext>` (macOS)       |
+4. Publish the release.
 
 ### 2. Update `index.md`
 
-1. Update the **"Latest release"** section with the new version number and download links.
+1. Update the **"Latest release"** section with the new version number and GitHub Release download links.  
+   Use the release asset URL format:  
+   `https://github.com/aion-dk/apps/releases/download/trustee-app-vX.Y.Z/Trustee.Application_X.Y.Z_<platform>.<ext>`
 2. Move the previous latest release into the **"Older versions"** table.
-3. URL-encode any spaces in filenames with `%20` (e.g. `Trustee%20Application_3.2.0_universal.dmg`).
 
 ### 3. Commit and push
 
 ```bash
-git add .
+git add index.md
 git commit -m "Add Trustee Application vX.Y.Z"
 git push
 ```
@@ -76,14 +77,4 @@ Then open [http://localhost:4000](http://localhost:4000).
 
 > **Note:** `Gemfile.lock` is git-ignored because GitHub Pages uses its own pinned dependency versions.
 
----
 
-## Removing old versions
-
-To keep the repository size manageable, you may want to remove very old installers. When doing so:
-
-1. Delete the file(s) from `keys-app/` or `trustee-app/`.
-2. Remove the corresponding row(s) from the **"Older versions"** table in `index.md`.
-3. Commit and push.
-
-> **Tip:** Even after deleting files from the working tree, they remain in Git history and the repo size stays large. If repo size becomes a concern, consider using [Git LFS](https://git-lfs.com/) for binary assets or a `git filter-repo` rewrite.
